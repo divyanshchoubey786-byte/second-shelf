@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-container-highest: #e5e2dd;
+  --color-on-primary-container: #86af99;
+  --color-tertiary-container: #00443e;
+  --color-primary-fixed: #c1ecd4;
+  --color-background: #fcf9f4;
+  --color-surface-container: #f0ede9;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-secondary-fixed: #2d1600;
+  --color-on-primary-fixed: #002114;
+  --color-surface-container-high: #ebe8e3;
+  --color-on-error-container: #93000a;
+  --color-primary: #012d1d;
+  --color-tertiary: #002c28;
+  --color-on-primary: #ffffff;
+  --color-on-tertiary-fixed: #00201d;
+  --color-on-surface-variant: #414844;
+  --color-surface-bright: #fcf9f4;
+  --color-inverse-primary: #a5d0b9;
+  --color-inverse-surface: #31302d;
+  --color-on-primary-fixed-variant: #274e3d;
+  --color-surface-variant: #e5e2dd;
+  --color-surface-tint: #3f6653;
+  --color-on-background: #1c1c19;
+  --color-surface-dim: #dcdad5;
+  --color-outline: #717973;
+  --color-on-secondary-fixed-variant: #6a3b00;
+  --color-surface-container-low: #f6f3ee;
+  --color-primary-container: #1b4332;
+  --color-on-surface: #1c1c19;
+  --color-on-secondary: #ffffff;
+  --color-primary-fixed-dim: #a5d0b9;
+  --color-surface: #fcf9f4;
+  --color-error: #ba1a1a;
+  --color-tertiary-fixed: #89f5e7;
+  --color-on-tertiary-container: #46b7aa;
+  --color-secondary-fixed: #ffdcbf;
+  --color-inverse-on-surface: #f3f0eb;
+  --color-on-tertiary-fixed-variant: #005049;
+  --color-tertiary-fixed-dim: #6bd8cb;
+  --color-secondary: #895110;
+  --color-outline-variant: #c1c8c2;
+  --color-on-tertiary: #ffffff;
+  --color-secondary-container: #ffb46c;
+  --color-secondary-fixed-dim: #ffb874;
+  --color-on-secondary-container: #784401;
+  --color-surface-container-lowest: #ffffff;
+
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-headline-sm: "Newsreader", Georgia, serif;
+  --font-headline-md: "Newsreader", Georgia, serif;
+  --font-headline-lg: "Newsreader", Georgia, serif;
+  --font-title-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-label-sm: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Plus Jakarta Sans", sans-serif;
+  --font-label-lg: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    background-color: #fcf9f4;
+    color: #1c1c19;
+  }
+}
+
+.font-headline-sm {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-headline-lg {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-title-md {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.font-body-sm {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.font-body-lg {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-label-sm {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.font-label-md {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+.font-label-lg {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+/* Material symbol filled variant */
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
